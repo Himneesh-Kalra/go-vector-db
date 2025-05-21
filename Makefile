@@ -11,11 +11,19 @@ ETC_DIR=/etc/vecdb
 SERVER_CONFIG=server/server_config.json
 CLI_CONFIG=cli/cli_config.json
 
-.PHONY: all build clean install test bench fmt
+.PHONY: all build clean install test bench fmt check-go
 
 all: build
 
-build:
+
+check-go:
+	@command -v go >/dev/null 2>&1 || { \
+		echo "❌ Go is not installed."; \
+		echo "👉 Please install Go from https://golang.org/dl/ before proceeding."; \
+		exit 1; \
+	}
+
+build: check-go
 	@echo "🔨 Building server..."
 	cd $(SERVER_DIR) && go build -o ../$(SERVER_BIN)
 	@echo "🔨 Building CLI..."
