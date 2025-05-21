@@ -40,13 +40,13 @@ func main() {
 		fmt.Println("******* Using Brute Search ********")
 
 	case "lsh":
-		db.UseLSH(32)
+		db.UseLSH(10)
 		fmt.Println("******* Using LSH Search ********")
 	default:
 		log.Fatalf("Unknown algorithm: %s", config.AppConfig.SearchAlgorithm)
 	}
 	addr := fmt.Sprintf(":%d", config.AppConfig.ServerPort)
-	tcpAddr := fmt.Sprintf("%s", config.AppConfig.TCPAddr)
+	tcpAddr := config.AppConfig.TCPAddr
 
 	wg.Add(1)
 	go func() {

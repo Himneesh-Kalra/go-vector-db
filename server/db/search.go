@@ -29,7 +29,7 @@ func UseBrute() {
 
 func SearchTopK(query []float32, k int, table string) []search.Result {
 	tableData, ok := storage.Store[table]
-	ApiQuery.Size=len(query)
+	ApiQuery.Size = len(query)
 	if !ok {
 		return nil
 	}

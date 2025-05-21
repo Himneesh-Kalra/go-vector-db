@@ -2,6 +2,7 @@ package search
 
 import (
 	"fmt"
+	// "log"
 	"math"
 	"math/rand"
 	"sort"
@@ -23,9 +24,12 @@ type LSHSearch struct {
 
 func NewLSHSearch(L int, K int, dim int) *LSHSearch {
 	src := rand.NewSource(time.Now().UnixNano())
-
 	if dim <= 0 {
-		panic("Invalid dimension : must be positive")
+		dim = 4
+		fmt.Println(dim)
+
+		// log.Fatalln("Invalid dimension : must be positive")
+
 	}
 
 	lsh := LSHSearch{

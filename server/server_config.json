@@ -4,6 +4,5 @@
     "search_algorithm":"lsh", 
     "lsh_k":6,
     "lsh_l":5,
-    "cli_mode":false,
     "tcp_addr":"127.0.0.1:6925"
 }
