@@ -1,0 +1,44 @@
+{
+  "vector_1": {
+    "id": "vector_1",
+    "values": [
+      0.1234,
+      0.5678,
+      0.9101,
+      0.1122,
+      0.3344
+    ],
+    "Meta": {
+      "source": "sensor_A",
+      "timestamp": "2025-04-25T10:30:00Z"
+    }
+  },
+  "vector_2": {
+    "id": "vector_2",
+    "values": [
+      0.9876,
+      0.5432,
+      0.1023,
+      0.8765,
+      0.4321
+    ],
+    "Meta": {
+      "source": "sensor_B",
+      "timestamp": "2025-04-25T11:00:00Z"
+    }
+  },
+  "vector_3": {
+    "id": "vector_3",
+    "values": [
+      0.2233,
+      0.4455,
+      0.6677,
+      0.8899,
+      0.1011
+    ],
+    "Meta": {
+      "source": "sensor_C",
+      "timestamp": "2025-04-25T12:00:00Z"
+    }
+  }
+}

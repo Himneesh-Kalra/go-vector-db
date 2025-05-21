@@ -1,0 +1,182 @@
+{
+  "vector1": {
+    "id": "vector1",
+    "values": [
+      0.12,
+      0.45,
+      0.78,
+      0.23
+    ],
+    "Meta": {
+      "category": "temperature",
+      "source": "sensor1"
+    }
+  },
+  "vector11": {
+    "id": "vector11",
+    "values": [
+      -0.4321,
+      0.7564,
+      -0.2987,
+      0.9132
+    ],
+    "Meta": {
+      "source": "sensor_K",
+      "timestamp": "2025-04-25T13:10:00Z"
+    }
+  },
+  "vector12": {
+    "id": "vector12",
+    "values": [
+      0.5821,
+      -0.6012,
+      0.2123,
+      -0.8976
+    ],
+    "Meta": {
+      "source": "sensor_L",
+      "timestamp": "2025-04-25T13:15:00Z"
+    }
+  },
+  "vector13": {
+    "id": "vector13",
+    "values": [
+      -0.9532,
+      -0.1034,
+      0.712,
+      0.4812
+    ],
+    "Meta": {
+      "source": "sensor_M",
+      "timestamp": "2025-04-25T13:20:00Z"
+    }
+  },
+  "vector14": {
+    "id": "vector14",
+    "values": [
+      0.0001,
+      -0.0002,
+      0.0003,
+      -0.0004
+    ],
+    "Meta": {
+      "source": "sensor_N",
+      "timestamp": "2025-04-25T13:25:00Z"
+    }
+  },
+  "vector16": {
+    "id": "vector16",
+    "values": [
+      0.13,
+      -0.26,
+      0.45,
+      -0.37
+    ],
+    "Meta": {
+      "source": "sensor_S19",
+      "timestamp": "2025-05-08T21:09:05Z"
+    }
+  },
+  "vector2": {
+    "id": "vector2",
+    "values": [
+      0.98,
+      0.76,
+      0.45,
+      0.67
+    ],
+    "Meta": {
+      "category": "humidity",
+      "source": "sensor2"
+    }
+  },
+  "vector3": {
+    "id": "vector3",
+    "values": [
+      0.21,
+      0.43,
+      0.65,
+      0.78
+    ],
+    "Meta": null
+  },
+  "vector4": {
+    "id": "vector4",
+    "values": [
+      0.56,
+      0.73,
+      0.82,
+      0.9
+    ],
+    "Meta": {
+      "location": "room1",
+      "sensor": "sensor3",
+      "timestamp": "2025-04-25T12:30:00Z"
+    }
+  },
+  "vector5": {
+    "id": "vector5",
+    "values": [
+      0.99,
+      0.23,
+      0.15,
+      0.87
+    ],
+    "Meta": {
+      "source": "sensor4",
+      "type": "pressure"
+    }
+  },
+  "vector6": {
+    "id": "vector6",
+    "values": [
+      0.2345,
+      0.5678,
+      0.8901,
+      0.1234
+    ],
+    "Meta": {
+      "source": "sensor_F",
+      "timestamp": "2025-04-25T12:10:00Z"
+    }
+  },
+  "vector7": {
+    "id": "vector7",
+    "values": [
+      0.3456,
+      0.6789,
+      0.1234,
+      0.5678
+    ],
+    "Meta": {
+      "source": "sensor_G",
+      "timestamp": "2025-04-25T12:20:00Z"
+    }
+  },
+  "vector8": {
+    "id": "vector8",
+    "values": [
+      0.4567,
+      0.789,
+      0.2345,
+      0.6789
+    ],
+    "Meta": {
+      "source": "sensor_H",
+      "timestamp": "2025-04-25T12:30:00Z"
+    }
+  },
+  "vector9": {
+    "id": "vector9",
+    "values": [
+      0.5678,
+      0.8901,
+      0.3456,
+      0.789
+    ],
+    "Meta": {
+      "source": "sensor_I",
+      "timestamp": "2025-04-25T12:40:00Z"
+    }
+  }
+}
