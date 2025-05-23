@@ -11,10 +11,9 @@ ETC_DIR=/etc/vecdb
 SERVER_CONFIG=server/server_config.json
 CLI_CONFIG=cli/cli_config.json
 
-.PHONY: all build clean install test bench fmt check-go
+.PHONY: all build clean install test bench fmt check-go tidy
 
 all: build
-
 
 check-go:
 	@command -v go >/dev/null 2>&1 || { \
@@ -23,7 +22,7 @@ check-go:
 		exit 1; \
 	}
 
-build: check-go
+build: check-go tidy
 	@echo "🔨 Building server..."
 	cd $(SERVER_DIR) && go build -o ../$(SERVER_BIN)
 	@echo "🔨 Building CLI..."
@@ -60,3 +59,10 @@ bench:
 # Format all code
 fmt:
 	go fmt ./...
+
+# Tidy dependencies
+tidy:
+	@echo "🧹 Tidying go.mod files..."
+	cd $(SERVER_DIR) && go mod tidy
+	cd $(CLI_DIR) && go mod tidy
+	@echo "✅ go.mod and go.sum tidied in both server and cli directories."
